@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Budget Variance",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-11-19 21:36:24.000547",
+ "dashboard_name": "Maintance DashBoard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-11-19 21:36:24.000547",
+ "modified_by": "Administrator",
+ "module": "Machine Maitenance",
+ "name": "Maintance DashBoard",
+ "owner": "Administrator"
+}

@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Completed Maintenance"
+  },
+  {
+   "card": "Overdue Maintenance"
+  },
+  {
+   "card": "Total Cost This Month"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-11-19 21:36:24.000547",
+ "dashboard_name": "Machine Maintenance Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-11-19 22:02:31.137016",
+ "modified_by": "Administrator",
+ "module": "Machine Maitenance",
+ "name": "Machine Maintenance Dashboard",
+ "owner": "Administrator"
+}

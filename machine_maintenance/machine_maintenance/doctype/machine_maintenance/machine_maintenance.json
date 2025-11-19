@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-19 20:20:05.244671",
+ "doctype": "DocType",
+  "custom": 0,
+ "istable": 0,
+ "editable_grid": 1,
+ "track_changes": 1,
+ "allow_import": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_name",
+  "maintenance_date",
+  "maintenance_type",
+  "completion_date",
+  "technician",
+  "status",
+  "cost",
+  "company",
+  "currency",
+  "section_break_parts",
+  "parts_used",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine_name",
+   "label": "Machine Name",
+   "fieldtype": "Link",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maintenance_date",
+   "label": "Maintenance Date",
+   "fieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maintenance_type",
+   "label": "Maintenance Type",
+   "fieldtype": "Select",
+   "options": "Preventive\nCorrective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "completion_date",
+   "label": "Completion Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "technician",
+   "label": "Technician",
+   "fieldtype": "Link",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nScheduled\nCompleted\nOverdue\nClosed",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "cost",
+   "label": "Total Cost",
+   "fieldtype": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "label": "Company",
+   "fieldtype": "Link",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency",
+   "label": "Currency",
+   "fieldtype": "Link",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_parts",
+   "fieldtype": "Section Break",
+   "label": "Parts Used"
+  },
+  {
+   "fieldname": "parts_used",
+   "label": "Parts Used",
+   "fieldtype": "Table",
+   "options": "Machine Maintenance Part"
+  },
+  {
+   "fieldname": "notes_section",
+   "label": "Notes",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "label": "Notes",
+   "fieldtype": "Text Editor"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-19 20:20:05.244671",
+ "modified_by": "Administrator",
+ "module": "Machine Maitenance",
+ "name": "Machine Maintenance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "print": 1,
+   "email": 1,
+   "report": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

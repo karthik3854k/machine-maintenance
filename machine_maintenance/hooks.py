@@ -145,6 +145,13 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "Machine Maintenance": {
+        # using DocType class methods (validate, on_submit) already
+        # but you can add more events if needed
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -241,4 +248,22 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+fixtures = [
+    {
+        "doctype": "Workflow",
+        "filters": [["document_type", "=", "Machine Maintenance"]]
+    },
+    {
+        "doctype": "Notification",
+        "filters": [["document_type", "=", "Machine Maintenance"]]
+    },
+    {
+        "doctype":"Workflow State"
+    },
+     {
+        "doctype":"Workflow Action Master"
+    }
+]
+
 
